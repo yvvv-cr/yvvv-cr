@@ -1,0 +1,175 @@
+body {
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+nav {
+    text-align: center;
+    overflow: hidden;
+    margin: 0 auto;
+}
+
+nav a {
+    display: inline-block;
+    color: black;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+nav a:hover {
+    color: #FF0F23;
+}
+
+.search-container {
+    text-align: center;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    position: relative;
+}
+
+input[type = "text"] {
+    padding: 10px;
+    width: 600px;
+    border: 2px solid #FF0F23;
+    border-radius: 4px;
+}
+
+button {
+    padding: 10px 20px;
+    background-color: #FF0F23;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    position: relative;
+}
+
+.search-container img {
+    margin-right: 1000px;
+    position: relative;
+    left: 10px;
+}
+
+/* 轮播容器样式 */
+.slider {
+    position: relative;
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+    overflow: hidden;
+    border-radius: 10px;
+}
+
+/* 图片样式 */
+.slider img {
+    width: 100%;
+    height: auto;
+    display: none;
+    border-radius: 10px;
+}
+
+/* 当前显示的图片样式 */
+.slider img.active {
+    display: block;
+}
+
+/* 导航按钮样式 */
+.slider-nav {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding: 0 10px;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+/* 鼠标悬停在轮播容器上时显示导航按钮 */
+.slider:hover .slider-nav {
+    opacity: 1;
+}
+
+/* 导航按钮 */
+.slider-nav button {
+    background: rgba(0, 0, 0, 0.5);
+    color: white;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+}
+
+/* 指示器容器样式 */
+.slider-dots {
+    position: absolute;
+    bottom: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+}
+
+/* 指示器样式 */
+.slider-dots .dot {
+    width: 10px;
+    height: 10px;
+    background: rgba(255, 255, 255, 0.5);
+    border-radius: 50%;
+    margin: 0 5px;
+    cursor: pointer;
+}
+
+/* 当前激活的指示器样式 */
+.slider-dots .dot.active {
+    background: white;
+}
+
+/* 页脚部分样式 */
+footer {
+    background-color: #f4f4f4;
+    padding: 20px;
+    text-align: center;
+    font-size: 14px;
+    color: #666;
+}
+
+.footer-top {
+    margin-bottom: 20px;
+}
+
+.footer-top span {
+    margin: 0 20px;
+}
+
+.footer-list {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 20px;
+}
+
+.footer-list ul {
+    list-style: none;
+    padding: 0;
+    text-align: left;
+}
+
+.footer-list ul li {
+    margin-bottom: 5px;
+}
+
+.footer-links a {
+    color: #666;
+    margin-right: 10px;
+    text-decoration: none;
+}
+
+.footer-info {
+    margin-bottom: 10px;
+}
+
+.footer-img img {
+    width: 80px;
+    margin: 0 10px;
+}
+    
